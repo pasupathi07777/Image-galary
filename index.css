@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.container-fluid {
+    width: 100vw;
+    /* height: 100vh; */
+    padding: 20px 0;
+
+
+    display: flex;
+
+    justify-content: center;
+    
+    background-color: #000;
+    z-index: 1;
+
+
+
+}
+
+
+
+.box {
+   /* min-width: 200px; */
+     /* border-radius: 5px; */
+    position: relative;
+    /* display: flex; */
+    padding: 0;
+    overflow: hidden;
+  
+
+}
+
+img {
+    width: 100%;
+    aspect-ratio: 1;
+    border-radius: 5px;
+}
+.captipon{
+    position: absolute;
+    width: 100%;
+    color: #fff;
+    text-transform: capitalize;
+    left: 0%;
+    bottom: 0;  
+    padding: 0px 5px;
+    margin: 8px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.pop_up{
+    display: flex;
+
+    width:70vw;
+    aspect-ratio: 1;
+
+    aspect-ratio: 1;
+   
+    
+    position: absolute;
+    top: 15vh;
+    
+    /* margin: 40%; */
+  
+  
+   
+    z-index: 2;
+    border-radius: 5px;
+    position: fixed;
+    
+    display: none;
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all 0.1s  ;
+}
+.pop_up .popep_caption{
+    position: absolute;
+    width: 100%;
+    /* height: 100%; */
+  
+    color: #fff;
+    text-transform: capitalize;
+    left: 0%;
+    bottom: 0;  
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.4);
+    font-size: 20px;
+    /* border-radius: 5px; */
+    
+}
+.pop_up .btn-box{
+    position: absolute;
+    
+    color: #fff;
+    text-transform: capitalize;
+    right: 0%;
+    bottom: 0px;  
+    padding: 5px;
+    border-radius: 10px;
+
+    
+
+}
+.btn-box button{
+    padding: 0px 10px;
+    border: none;
+    font-weight: 800;
+    background-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 5px;
+    border-top: none;
+}
+.pop_up img{
+    width: 100%;
+    height: 100%;
+}
+.close_button{
+    width: 25px;
+    aspect-ratio: 1;
+  
+   
+    
+   
+ 
+   
+   
+   
+
+  
+   
+   position: absolute;
+   top: 0px;
+   right: 0px;
+   border-radius: 10px;
+   
+
+}
+.close_button button{
+    line-height: 12.5px;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    border: none;
+    background-color: #000;
+   color: #fff;
+   font-weight: 800;
+   border-radius:5px;
+   /* border-bottom: none; */
+
+}
+@media (min-width:500px) {
+    .pop_up{
+        width: 80vh;
+        aspect-ratio: 1;
+    
+        
+    }}  
+    
+/* } @media (min-width:800px) {
+    .pop_up{
+        width: 90vh;
+        aspect-ratio: 1;
+       
+        
+    }
+    
+} @media (min-width:800px) { */
+    /* .pop_up{
+        width: 90vh;
+        aspect-ratio: 1;
+       
+        
+    }
+    
+}  */
